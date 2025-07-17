@@ -1,0 +1,16 @@
+name: Run only triggered manually
+
+on:
+  workflow_dispatch:
+     inputs:
+        username:
+          description: 'give a valid name'
+          required: true
+          default: click
+jobs:
+  my-manual-trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'I am triggered'
+
+      
