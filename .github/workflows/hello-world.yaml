@@ -1,0 +1,11 @@
+# .github/workflows/hello-world.yml
+name: Hello World Workflow
+
+on: [push]  # Triggered on every push
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a greeting
+        run: echo "Hello, GitHub Actions!"
